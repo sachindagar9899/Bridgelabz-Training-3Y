@@ -1,0 +1,8 @@
+/* Q2: Full-width sections, gradients and parallax-like fixed backgrounds */
+*{box-sizing:border-box}body{margin:0;font-family:Arial,sans-serif;color:#fff;background:#161616}
+header{padding:1.5rem 6%;background:#30231d;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:5}
+nav a{color:white;text-decoration:none;margin-left:1.2rem}main section{min-height:70vh;padding:12vh 8%;background-size:cover;background-position:center;background-attachment:fixed}
+section h2{font-size:clamp(2rem,5vw,4rem);font-weight:800;margin:0 0 1rem}section p{max-width:650px;font-size:1.2rem;line-height:1.8}
+.linear{background-image:linear-gradient(120deg,#7b341e,#d97706)}.radial{background-image:radial-gradient(circle,#1d4ed8,#0f172a)}
+.photo{background-image:linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.65)),url("https://picsum.photos/1600/900?random=2")}
+footer{text-align:center;padding:2rem;background:#30231d}

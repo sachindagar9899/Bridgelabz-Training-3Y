@@ -1,0 +1,6 @@
+/* Q4: Pseudo-elements, mark styling and blockquote */
+body{margin:0;background:#f5f1e8;color:#252525;font-family:Georgia,serif}
+article{max-width:850px;margin:auto;padding:50px 25px}header{text-align:center;border-bottom:2px solid #555;padding-bottom:20px;margin-bottom:30px}
+h1{font-size:3rem;margin-bottom:10px}p{margin:0 0 25px;line-height:1.8;font-size:1.08rem}
+p::first-letter{font-size:2.4rem;font-weight:bold}p::first-line{font-weight:bold}
+mark{background:#facc15;padding:2px 5px}blockquote{margin:35px 0;padding:20px 25px;border-left:6px solid #92400e;background:#fff7ed;font-style:italic;font-size:1.25rem}
