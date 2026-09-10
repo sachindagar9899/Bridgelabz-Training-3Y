@@ -1,0 +1,8 @@
+* { box-sizing: border-box; }
+body { margin: 0; min-height: 100vh; padding: 50px 8%; font-family: Arial, sans-serif; text-align: center; background: #f8fafc; }
+.pricing { display: flex; align-items: center; justify-content: center; gap: 25px; }
+.card { flex: 1; max-width: 300px; padding: 35px; background: white; border-radius: 15px; box-shadow: 0 5px 15px #ccc; animation: fadeIn 1s ease; transition: transform 0.3s; }
+.card:hover { transform: translateY(-10px); }
+.popular { padding: 50px 35px; background: #dbeafe; }
+@keyframes fadeIn { from { opacity: 0; transform: translateY(25px); } to { opacity: 1; transform: translateY(0); } }
+@media (max-width: 750px) { .pricing { flex-direction: column; } .card { width: 100%; } }
