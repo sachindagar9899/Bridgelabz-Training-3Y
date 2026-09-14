@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Height & Width | Sachin Dagar</title><link rel="stylesheet" href="question3.css">  <style>
+* { box-sizing: border-box; }
+body { margin: 0; min-height: 100vh; font-family: Arial, sans-serif; background: #eef2ff; color: #172033; }
+header, footer { text-align: center; padding: 20px; }
+.stage { min-height: 65vh; display: flex; align-items: center; justify-content: center; gap: 22px; flex-wrap: wrap; padding: 20px; }
+.box { display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 1em; border-radius: 18px; color: white; overflow: auto; }
+.box-one { width: 180px; height: 120px; background: #2563eb; }
+.box-two { width: 45%; min-width: 220px; height: 170px; background: #16a34a; }
+.box-three { width: 260px; height: 20vh; min-height: 150px; max-width: 30em; background: #9333ea; }
+h2 { margin: 0 0 8px; }
+.student-badge {
+  width: fit-content;
+  margin: 10px auto 0;
+  padding: 8px 16px;
+  border-radius: 999px;
+  background: rgba(37, 99, 235, 0.10);
+  color: #1d4ed8;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: .3px;
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+.student-badge:hover {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 8px 20px rgba(37, 99, 235, .15);
+}
+
+  </style>
+</head>
+<body>
+<header><h1>Height & Width Practice</h1></header>
+<main class="stage">
+  <section class="box box-one"><h2>PX</h2><p>180px × 120px</p></section>
+  <section class="box box-two"><h2>%</h2><p>45% width</p></section>
+  <section class="box box-three"><h2>VH / EM</h2><p>20vh height with em spacing. This text demonstrates overflow handling when content exceeds the box.</p></section>
+</main>
+<div class="student-badge">✨ Designed & Coded by Sachin Dagar</div>
+  <footer>Created by Sachin Dagar • Assignment 7</footer>
+</body>
+</html>

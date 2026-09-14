@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Transforms | Sachin Dagar</title><link rel="stylesheet" href="question7.css">  <style>
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; text-align: center; background: #f8fafc; color: #172033; }
+header, footer { padding: 24px; }
+.transform-grid { display: flex; justify-content: center; align-items: center; gap: 50px; flex-wrap: wrap; min-height: 55vh; }
+.transform-grid section { width: 120px; }
+.box { width: 100px; height: 100px; margin: auto; display: grid; place-items: center; border-radius: 15px; background: #2563eb; color: white; font-size: 30px; font-weight: bold; transition: all 0.4s ease; }
+.rotate:hover { transform: rotate(25deg); }
+.scale:hover { transform: scale(1.3); }
+.translate:hover { transform: translate(20px, -15px); }
+.skew:hover { transform: skew(15deg, 8deg); }
+p { font-weight: bold; }
+.student-badge {
+  width: fit-content;
+  margin: 10px auto 0;
+  padding: 8px 16px;
+  border-radius: 999px;
+  background: rgba(37, 99, 235, 0.10);
+  color: #1d4ed8;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: .3px;
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+.student-badge:hover {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 8px 20px rgba(37, 99, 235, .15);
+}
+
+  </style>
+</head>
+<body>
+<header><h1>CSS Transformations</h1><p>Hover over each box</p></header>
+<main class="transform-grid">
+  <section><div class="box rotate">A</div><p>rotate()</p></section>
+  <section><div class="box scale">B</div><p>scale()</p></section>
+  <section><div class="box translate">C</div><p>translate()</p></section>
+  <section><div class="box skew">D</div><p>skew()</p></section>
+</main>
+<div class="student-badge">✨ Designed & Coded by Sachin Dagar</div>
+  <footer>Created by Sachin Dagar • Assignment 7</footer>
+</body>
+</html>

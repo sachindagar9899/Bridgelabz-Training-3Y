@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Box Model | Sachin Dagar</title><link rel="stylesheet" href="question9.css">  <style>
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; background: #f8fafc; color: #172033; text-align: center; }
+header, footer { padding: 24px; }
+.box-model { display: flex; justify-content: center; margin: 25px auto; }
+.margin-layer { width: 410px; padding: 35px; background: #fef3c7; outline: 3px dashed #d97706; }
+.border-layer { padding: 28px; background: #bfdbfe; border: 12px solid #2563eb; }
+.padding-layer { padding: 35px; background: #bbf7d0; }
+.content-layer { padding: 30px; background: #ffffff; font-weight: bold; }
+.label { display: block; font-size: 12px; font-weight: bold; margin-bottom: 8px; }
+.explain { width: min(700px, 90%); margin: auto; display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; }
+.explain p { background: white; padding: 14px; border-radius: 10px; }
+.margin-label { color: #92400e; } .border-label { color: #1e40af; } .padding-label { color: #166534; }
+.student-badge {
+  width: fit-content;
+  margin: 10px auto 0;
+  padding: 8px 16px;
+  border-radius: 999px;
+  background: rgba(37, 99, 235, 0.10);
+  color: #1d4ed8;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: .3px;
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+.student-badge:hover {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 8px 20px rgba(37, 99, 235, .15);
+}
+
+  </style>
+</head>
+<body>
+<header><h1>CSS Box Model Exploration</h1></header>
+<main>
+  <section class="box-model">
+    <div class="margin-layer">
+      <span class="label margin-label">MARGIN</span>
+      <div class="border-layer">
+        <span class="label border-label">BORDER</span>
+        <div class="padding-layer">
+          <span class="label padding-label">PADDING</span>
+          <div class="content-layer">CONTENT</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="explain"><p><strong>Content:</strong> the actual text or element.</p><p><strong>Padding:</strong> space inside the border.</p><p><strong>Border:</strong> the visible edge around padding.</p><p><strong>Margin:</strong> space outside the border.</p></section>
+</main>
+<div class="student-badge">✨ Designed & Coded by Sachin Dagar</div>
+  <footer>Created by Sachin Dagar • Assignment 7</footer>
+</body>
+</html>

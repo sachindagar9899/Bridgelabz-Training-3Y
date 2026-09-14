@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Borders & Padding | Sachin Dagar</title>
+  <link rel="stylesheet" href="question2.css">
+  <style>
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; background: #f4f7fb; color: #172033; }
+header, footer { text-align: center; padding: 24px; }
+.box-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 24px; padding: 30px; }
+.demo { width: 190px; min-height: 150px; background: white; border-width: 5px; padding: 24px; transition: border-color .3s ease, transform .3s ease; }
+.demo:hover { border-color: #e63946; transform: translateY(-5px); }
+.solid { border-style: solid; border-color: #2563eb; padding: 18px; }
+.dashed { border-style: dashed; border-color: #16a34a; padding: 28px; }
+.double { border-style: double; border-color: #9333ea; padding: 34px; }
+.groove { border-style: groove; border-color: #ea580c; padding: 12px; }
+.rounded { border-style: solid; border-color: #0891b2; border-radius: 28px; padding: 30px; }
+h2 { margin-top: 0; }
+.student-badge {
+  width: fit-content;
+  margin: 10px auto 0;
+  padding: 8px 16px;
+  border-radius: 999px;
+  background: rgba(37, 99, 235, 0.10);
+  color: #1d4ed8;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: .3px;
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+.student-badge:hover {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 8px 20px rgba(37, 99, 235, .15);
+}
+
+  </style>
+</head>
+<body>
+  <header><h1>Borders & Padding</h1><p>CSS spacing and border styles demonstration</p></header>
+  <main class="box-grid">
+    <section class="demo solid"><h2>Solid</h2><p>Standard solid border.</p></section>
+    <section class="demo dashed"><h2>Dashed</h2><p>Dashed border with padding.</p></section>
+    <section class="demo double"><h2>Double</h2><p>Double border effect.</p></section>
+    <section class="demo groove"><h2>Groove</h2><p>Groove border style.</p></section>
+    <section class="demo rounded"><h2>Rounded</h2><p>Rounded corners using border-radius.</p></section>
+  </main>
+  <div class="student-badge">✨ Designed & Coded by Sachin Dagar</div>
+  <footer>Created by Sachin Dagar • Assignment 7</footer>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Typography | Sachin Dagar</title><link rel="stylesheet" href="question8.css">  <style>
+* { box-sizing: border-box; }
+body { margin: 0; background: #f1f5f9; color: #172033; font-family: Georgia, serif; }
+header, footer { text-align: center; padding: 24px; font-family: Arial, sans-serif; }
+article { width: min(760px, 92%); margin: 25px auto; padding: 40px; background: white; border-radius: 20px; box-shadow: 0 10px 30px rgba(15,23,42,.1); line-height: 1.8; }
+h2 { font-family: Arial, sans-serif; font-size: 2em; text-align: center; letter-spacing: .5px; }
+.intro { font-family: "Trebuchet MS", sans-serif; font-size: 1.2em; font-weight: 600; text-align: justify; }
+mark { background: #fde68a; color: #713f12; padding: 2px 5px; }
+strong { color: #1d4ed8; }
+em { color: #be123c; }
+article p::first-letter { font-size: 1.5em; font-weight: bold; }
+article p::first-line { letter-spacing: .3px; }
+.student-badge {
+  width: fit-content;
+  margin: 10px auto 0;
+  padding: 8px 16px;
+  border-radius: 999px;
+  background: rgba(37, 99, 235, 0.10);
+  color: #1d4ed8;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: .3px;
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+.student-badge:hover {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 8px 20px rgba(37, 99, 235, .15);
+}
+
+  </style>
+</head>
+<body>
+<header><h1>Typography & Text Styling</h1></header>
+<main>
+<article>
+  <h2>A Short Article About Good Design</h2>
+  <p class="intro">Good typography makes digital content easier to understand and more enjoyable to read.</p>
+  <p>Designers use <mark>font families</mark>, different <strong>font weights</strong>, and <em>carefully chosen sizes</em> to create hierarchy.</p>
+  <p>Readable text needs enough <strong>line-height</strong>, comfortable letter spacing, and appropriate text alignment. A balanced page guides the reader naturally from one idea to the next.</p>
+</article>
+</main>
+<div class="student-badge">✨ Designed & Coded by Sachin Dagar</div>
+  <footer>Created by Sachin Dagar • Assignment 7</footer>
+</body>
+</html>

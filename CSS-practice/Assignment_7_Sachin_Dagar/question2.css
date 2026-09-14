@@ -1,0 +1,28 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; background: #f4f7fb; color: #172033; }
+header, footer { text-align: center; padding: 24px; }
+.box-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 24px; padding: 30px; }
+.demo { width: 190px; min-height: 150px; background: white; border-width: 5px; padding: 24px; transition: border-color .3s ease, transform .3s ease; }
+.demo:hover { border-color: #e63946; transform: translateY(-5px); }
+.solid { border-style: solid; border-color: #2563eb; padding: 18px; }
+.dashed { border-style: dashed; border-color: #16a34a; padding: 28px; }
+.double { border-style: double; border-color: #9333ea; padding: 34px; }
+.groove { border-style: groove; border-color: #ea580c; padding: 12px; }
+.rounded { border-style: solid; border-color: #0891b2; border-radius: 28px; padding: 30px; }
+h2 { margin-top: 0; }
+.student-badge {
+  width: fit-content;
+  margin: 10px auto 0;
+  padding: 8px 16px;
+  border-radius: 999px;
+  background: rgba(37, 99, 235, 0.10);
+  color: #1d4ed8;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: .3px;
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+.student-badge:hover {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 8px 20px rgba(37, 99, 235, .15);
+}

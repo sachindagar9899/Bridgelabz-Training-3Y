@@ -1,0 +1,26 @@
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; font-family: Arial, sans-serif; color: white; }
+header { position: fixed; top: 0; left: 0; right: 0; z-index: 2; padding: 16px; text-align: center; background: rgba(15,23,42,.9); }
+main { padding-top: 72px; }
+.gradient { min-height: 65vh; display: flex; align-items: center; justify-content: center; text-align: center; padding: 40px; }
+.linear { background: linear-gradient(120deg, #2563eb, #7c3aed, #db2777); background-attachment: fixed; }
+.radial { background: radial-gradient(circle at center, #f59e0b, #dc2626 45%, #581c87); }
+.gradient div { max-width: 650px; padding: 30px; border-radius: 20px; background: rgba(0,0,0,.22); }
+footer { position: fixed; bottom: 0; left: 0; right: 0; text-align: center; padding: 12px; background: rgba(15,23,42,.9); }
+.student-badge {
+  width: fit-content;
+  margin: 10px auto 0;
+  padding: 8px 16px;
+  border-radius: 999px;
+  background: rgba(37, 99, 235, 0.10);
+  color: #1d4ed8;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: .3px;
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+.student-badge:hover {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 8px 20px rgba(37, 99, 235, .15);
+}
