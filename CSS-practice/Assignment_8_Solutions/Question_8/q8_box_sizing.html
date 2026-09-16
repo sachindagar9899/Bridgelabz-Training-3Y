@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Box Sizing</title>
+<style>
+*{box-sizing:border-box}body{margin:0;min-height:100vh;font-family:Arial;background:#f8fafc;display:flex;align-items:center;justify-content:center}.container{width:min(950px,92%);text-align:center}
+.boxes{display:flex;gap:25px;justify-content:center;flex-wrap:wrap}.box{width:300px;padding:30px;border:12px solid;margin-top:20px;border-radius:12px}
+.content{box-sizing:content-box;background:#dbeafe;border-color:#2563eb}.border{box-sizing:border-box;background:#dcfce7;border-color:#16a34a}
+@media(max-width:700px){.box{width:100%}}
+</style></head>
+<body><main class="container"><h1>Box-Sizing Comparison</h1><div class="boxes">
+<section class="box content"><h2>content-box</h2><p>Width applies to content only. Padding and border are added to the total size.</p></section>
+<section class="box border"><h2>border-box</h2><p>Width includes content, padding, and border, keeping the total width at 300px.</p></section>
+</div></main></body></html>

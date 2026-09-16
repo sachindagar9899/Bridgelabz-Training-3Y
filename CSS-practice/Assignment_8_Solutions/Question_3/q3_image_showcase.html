@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Image Showcase</title>
+<style>
+*{box-sizing:border-box}body{margin:0;font-family:Arial;background:#eef2f7;color:#172033}header{text-align:center;padding:25px}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;max-width:1100px;margin:auto;padding:20px}
+figure{margin:0;background:white;border-radius:14px;overflow:hidden;box-shadow:0 6px 18px #0002}
+.photo{position:relative;overflow:hidden}.photo img{width:100%;height:230px;object-fit:cover;display:block;transition:transform .3s ease}
+.photo::after{content:"";position:absolute;inset:0;background:#0008;opacity:0;transition:opacity .3s ease}
+figure:hover img{transform:scale(1.1)}figure:hover .photo::after{opacity:1}
+figcaption{padding:14px;text-align:center;font-weight:bold}
+@media(max-width:700px){.gallery{grid-template-columns:1fr}}
+</style></head>
+<body><header><h1>Image Showcase</h1></header>
+<main class="gallery">
+<figure><div class="photo"><img src="https://picsum.photos/id/1015/600/400" alt="Mountain"></div><figcaption>Mountain View</figcaption></figure>
+<figure><div class="photo"><img src="https://picsum.photos/id/1011/600/400" alt="Forest"></div><figcaption>Forest</figcaption></figure>
+<figure><div class="photo"><img src="https://picsum.photos/id/1016/600/400" alt="River"></div><figcaption>River</figcaption></figure>
+<figure><div class="photo"><img src="https://picsum.photos/id/1025/600/400" alt="Dog"></div><figcaption>Nature Friend</figcaption></figure>
+<figure><div class="photo"><img src="https://picsum.photos/id/1035/600/400" alt="Water"></div><figcaption>Calm Water</figcaption></figure>
+<figure><div class="photo"><img src="https://picsum.photos/id/1043/600/400" alt="Beach"></div><figcaption>Beach</figcaption></figure>
+</main></body></html>

@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>CSS Animations</title>
+<style>
+*{box-sizing:border-box}body{margin:0;min-height:100vh;font-family:Arial;background:#0f172a;color:white;display:flex;align-items:center;justify-content:center}
+.animations{display:flex;gap:70px;align-items:center;justify-content:center;flex-wrap:wrap}.box{width:70px;height:70px;background:#38bdf8;animation:move 2s ease-in-out infinite alternate}
+.ball{width:70px;height:70px;background:#fbbf24;border-radius:50%;animation:bounce 1s ease-in-out infinite;animation-direction:alternate}
+.text{font-size:28px;font-weight:bold;animation:colorchange 3s ease-in-out infinite;animation-delay:.5s}
+@keyframes move{from{transform:translateX(-50px)}to{transform:translateX(50px)}}
+@keyframes bounce{from{transform:translateY(-50px)}to{transform:translateY(50px)}}
+@keyframes colorchange{0%,100%{opacity:.4;transform:scale(1)}50%{opacity:1;transform:scale(1.15)}}
+</style></head>
+<body><main><h1>CSS Animation Demonstration</h1><section class="animations"><div class="box"></div><div class="ball"></div><div class="text">Animating Text</div></section></main></body></html>

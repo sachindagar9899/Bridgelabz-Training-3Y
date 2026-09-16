@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Button Collection</title>
+<style>
+*{box-sizing:border-box}body{margin:0;min-height:100vh;font-family:Arial;background:#f1f5f9;display:flex;align-items:center;justify-content:center}
+.container{text-align:center}.buttons{display:flex;gap:18px;justify-content:center;flex-wrap:wrap;margin-top:25px}
+button{padding:13px 25px;border-radius:9px;font-size:16px;cursor:pointer;transition:.25s;box-shadow:0 4px 10px #0002}
+.primary{background:#2563eb;color:white;border:2px solid #2563eb}.secondary{background:#475569;color:white;border:2px solid #475569}
+.outline{background:white;color:#2563eb;border:2px solid #2563eb}.disabled{background:#cbd5e1;border:2px solid #cbd5e1;color:#64748b;cursor:not-allowed}
+button:hover:not(:disabled){transform:translateY(-3px);box-shadow:0 7px 15px #0003}
+button:active:not(:disabled){transform:scale(.95)}button:focus{outline:3px solid #f59e0b;outline-offset:3px}
+button:disabled{opacity:.7}
+</style></head>
+<body><main class="container"><h1>Styled Button Collection</h1><p>Try hover, click, and keyboard focus.</p>
+<section class="buttons"><button class="primary">Primary</button><button class="secondary">Secondary</button><button class="outline">Outline</button><button class="disabled" disabled>Disabled</button></section></main></body></html>

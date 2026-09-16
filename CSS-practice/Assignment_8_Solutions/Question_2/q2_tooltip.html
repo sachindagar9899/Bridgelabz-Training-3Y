@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tooltip Demonstration</title>
+<style>
+*{box-sizing:border-box} body{margin:0;min-height:100vh;font-family:Arial;background:#f5f7fb;display:flex;align-items:center;justify-content:center}
+.container{text-align:center} .items{display:flex;gap:45px;justify-content:center;flex-wrap:wrap;margin-top:35px}
+.tip{position:relative;padding:18px 25px;background:#1e293b;color:white;border-radius:9px;cursor:pointer}
+.tooltip{position:absolute;bottom:calc(100% + 12px);left:50%;transform:translateX(-50%);background:#111827;color:white;padding:9px 12px;border-radius:6px;white-space:nowrap;opacity:0;pointer-events:none;transition:opacity .3s ease-in-out}
+.tooltip::after{content:"";position:absolute;top:100%;left:50%;border:6px solid transparent;border-top-color:#111827;transform:translateX(-50%)}
+.tip:hover .tooltip{opacity:1}
+</style>
+</head>
+<body><main class="container"><h1>CSS Tooltip Demonstration</h1><p>Hover over each element.</p>
+<section class="items">
+<div class="tip">Home<span class="tooltip">Go to Home</span></div>
+<div class="tip">Search<span class="tooltip">Search content</span></div>
+<div class="tip">Profile<span class="tooltip">View your profile</span></div>
+<div class="tip">Settings<span class="tooltip">Open settings</span></div>
+</section></main></body></html>
