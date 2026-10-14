@@ -1,0 +1,123 @@
+<html>
+<head>
+    <title>Website</title>
+    <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
+            min-width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(227, 147, 9, .6);
+            border: 4px solid red;
+            box-sizing: border-box;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: 200px 200px 200px;
+            grid-template-rows: 200px 200px 200px;
+            grid-template-areas:
+                "item1 item2 item2"
+                "item1 item3 item4"
+                "item5 item5 item6";
+
+            gap: 1rem;
+        }
+        .item { 
+        background-color: rgb(21, 201, 183); 
+        border: 2px solid black; 
+        border-radius: .5rem; 
+        display: flex; 
+        justify-content: center; 
+        align-items: flex-end;     
+        padding: 10px; 
+        font-size: large; 
+        font-weight: bold;
+        text-align: center;   
+        }
+        .hover-text {
+            display: none;
+        }
+        .item:hover .click-text {
+            display: none;
+            align-items: center;
+            text-align: center;
+            
+        }
+        .item:hover .hover-text {
+            display: block;
+        }
+        .item1:hover {
+            color: yellow;
+            background-image: url("sunset.jpeg");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .item2:hover {
+            color: black;
+            background-image: url("images.jpeg");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .item3:hover {
+            color: black;
+            background-image: url("eye.jpeg");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .item4:hover {
+            color: white;
+            background-image: url("rose.jpeg");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .item5:hover {
+            color: green;
+            background-image: url("frog.jpeg");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .item6:hover {
+            color: orange;
+            background-image: url("road.jpeg");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item1" style="grid-area: item1;">
+            <span class="click-text">Teri meri shaam, aur dhalta hua suraj</span>
+            <span class="hover-text">Sunset</span>
+        </div>
+        <div class="item item2" style="grid-area: item2;">
+            <span class="click-text">Tu Azaad, Main Sukoon</span>
+            <span class="hover-text">Butterfly</span>
+        </div>
+        <div class="item item3" style="grid-area: item3;">
+            <span class="click-text">Teri aankhon mein, meri poori duniya</span>
+            <span class="hover-text">Eye</span>
+        </div>
+        <div class="item item4" style="grid-area: item4;">
+            <span class="click-text">Ek gulab tere naam, ek khwaab tere saath</span>
+            <span class="hover-text">Rose</span>
+        </div>
+        <div class="item item5" style="grid-area: item5;">
+            <span class="click-text">Chhoti si duniya, badi si khushi</span>
+            <span class="hover-text">Frog</span>
+        </div>
+        <div class="item item6" style="grid-area: item6;">
+            <span class="click-text">Manzil kya hai, safar tere saath ho</span>
+            <span class="hover-text">Road</span>
+        </div>
+    </div>
+</body>
+</html>
