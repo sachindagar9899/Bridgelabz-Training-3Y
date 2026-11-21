@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search Courses</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  
+  <script src="script.js" defer></script>
+</head>
+<body>
+<main class="container">
+  <h1>Search Courses</h1>
+  <label for="courseSearch">Search courses</label>
+  <input id="courseSearch" type="search" placeholder="Try JavaScript, Python, SQL...">
+  <p id="courseCount" aria-live="polite"></p>
+  <button id="clearSearch">Clear Search</button>
+  <ul id="courseList" class="course-list">
+    <li>JavaScript Fundamentals</li><li>Python for Beginners</li><li>Advanced Java Programming</li>
+    <li>Database Management with SQL</li><li>Cybersecurity Essentials</li><li>Web Development with HTML and CSS</li>
+    <li>Data Structures and Algorithms</li>
+  </ul>
+</main>
+</body>
+</html>

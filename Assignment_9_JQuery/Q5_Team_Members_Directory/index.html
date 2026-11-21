@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Team Members Directory</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  
+  <script src="script.js" defer></script>
+</head>
+<body>
+<main class="container">
+  <h1>Team Members Directory</h1>
+  <p>Click a manager, department, or choose a random employee.</p>
+  <button id="randomEmployee">Select Random Employee</button>
+  <section class="department" data-department="Engineering">
+    <h2 class="department-title">Engineering Department</h2>
+    <div class="team">
+      <article class="employee manager"><button class="manager-name">Aditi Sharma — Manager</button><div class="reports">
+        <div class="employee"><span class="employee-name">Rahul Verma</span><span class="contact">rahul@example.com · 9000000001</span></div>
+        <div class="employee"><span class="employee-name">Neha Singh</span><span class="contact">neha@example.com · 9000000002</span></div>
+        <div class="employee"><span class="employee-name">Karan Patel</span><span class="contact">karan@example.com · 9000000003</span></div>
+      </div></article>
+    </div>
+  </section>
+  <section class="department" data-department="Design">
+    <h2 class="department-title">Design Department</h2>
+    <div class="team">
+      <article class="employee manager"><button class="manager-name">Mehul Jain — Manager</button><div class="reports">
+        <div class="employee"><span class="employee-name">Isha Gupta</span><span class="contact">isha@example.com · 9000000004</span></div>
+        <div class="employee"><span class="employee-name">Arjun Rao</span><span class="contact">arjun@example.com · 9000000005</span></div>
+      </div></article>
+    </div>
+  </section>
+</main>
+</body>
+</html>

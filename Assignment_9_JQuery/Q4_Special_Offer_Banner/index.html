@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Special Offer Banner</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  
+  <script src="script.js" defer></script>
+</head>
+<body>
+<main class="container">
+  <h1>Special Offers</h1>
+  <div class="controls">
+    <button id="hideBanners">Hide All</button><button id="showBanners">Show All</button>
+    <button id="slideUp">Slide Up</button><button id="slideDown">Slide Down</button>
+    <button id="fadeOut">Fade Out</button><button id="fadeIn">Fade In</button>
+  </div>
+  <section id="bannerArea">
+    <article class="banner"><h2>Offer 1: 20% Off</h2><p>Save on selected accessories this week.</p></article>
+    <article class="banner"><h2>Offer 2: Free Shipping</h2><p>Free delivery on orders over $50.</p></article>
+    <article class="banner"><h2>Offer 3: Buy One, Get One</h2><p>Special deal on selected items.</p></article>
+    <article class="banner"><h2>Offer 4: Student Discount</h2><p>Show your student ID to receive a discount.</p></article>
+    <article class="banner"><h2>Offer 5: Weekend Sale</h2><p>Limited-time prices on popular products.</p></article>
+  </section>
+  <p id="rotationStatus" class="hint">Automatic banner rotation is active (every 5 seconds).</p>
+</main>
+</body>
+</html>

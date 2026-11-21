@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Highlight</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  
+  <script src="script.js" defer></script>
+</head>
+<body>
+<main class="container">
+  <h1>Featured Products</h1>
+  <p>Click a product to highlight it, hover for details, and use the heart to favorite it.</p>
+  <section class="products">
+    <article class="product" data-stock="in" data-discount="20">
+      <h2>Wireless Headphones</h2><p class="price">$79.99</p><p class="details">Bluetooth 5.3, noise cancellation, 30-hour battery.</p>
+      <button class="favorite" aria-label="Favorite product">♡ Favorite</button>
+    </article>
+    <article class="product" data-stock="out" data-discount="0">
+      <h2>Smart Watch</h2><p class="price">$99.99</p><p class="details">Fitness tracking, heart-rate monitor, water resistant.</p>
+      <button class="favorite" aria-label="Favorite product">♡ Favorite</button>
+    </article>
+    <article class="product" data-stock="in" data-discount="15">
+      <h2>Portable Speaker</h2><p class="price">$49.99</p><p class="details">Compact speaker with rich sound and 12-hour playtime.</p>
+      <button class="favorite" aria-label="Favorite product">♡ Favorite</button>
+    </article>
+    <article class="product" data-stock="in" data-discount="0">
+      <h2>USB-C Hub</h2><p class="price">$29.99</p><p class="details">Seven ports for your laptop and accessories.</p>
+      <button class="favorite" aria-label="Favorite product">♡ Favorite</button>
+    </article>
+    <article class="product" data-stock="out" data-discount="10">
+      <h2>Gaming Mouse</h2><p class="price">$39.99</p><p class="details">Adjustable DPI and programmable buttons.</p>
+      <button class="favorite" aria-label="Favorite product">♡ Favorite</button>
+    </article>
+  </section>
+</main>
+</body>
+</html>

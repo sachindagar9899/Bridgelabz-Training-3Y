@@ -1,0 +1,46 @@
+* { box-sizing: border-box; }
+body { margin: 0; padding: 28px; background: #f1f5f9; color: #1e293b; font: 16px/1.5 Arial, sans-serif; }
+.container { max-width: 900px; margin: 18px auto; padding: 26px; background: #fff; border-radius: 12px; box-shadow: 0 5px 22px #0f172a14; }
+h1 { margin-top: 0; color: #0f172a; }
+button { border: 0; border-radius: 6px; background: #2563eb; color: white; padding: 9px 14px; margin: 4px; cursor: pointer; }
+button:hover { background: #1d4ed8; }
+input { padding: 10px; border: 1px solid #cbd5e1; border-radius: 6px; max-width: 100%; }
+.controls { display: flex; flex-wrap: wrap; gap: 5px; margin: 12px 0; }
+.hint { color: #64748b; }
+.products { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; }
+.product, .post, .widget, .banner, .faq-item { padding: 16px; border: 1px solid #cbd5e1; border-radius: 9px; margin: 10px 0; }
+.product { cursor: pointer; position: relative; }
+.product.highlight { background: #dbeafe; border: 2px solid #2563eb; }
+.product[data-discount]:not([data-discount="0"]) { box-shadow: inset 4px 0 #16a34a; }
+.product[data-discount]:not([data-discount="0"])::after { content: "Discount available"; color: #15803d; font-size: 12px; }
+.details { display: none; color: #475569; }
+.favorite.selected { background: #be123c; }
+.question { padding: 10px; background: #f1f5f9; cursor: pointer; border-radius: 6px; }
+.answer { padding: 10px; }
+.banner { background: #eff6ff; border-left: 5px solid #2563eb; }
+.employee { padding: 10px; margin: 7px; border: 1px solid #cbd5e1; border-radius: 6px; }
+.reports { margin-left: 25px; }
+.manager-name { background: #334155; }
+.contact { display: block; color: #475569; font-size: 13px; }
+.report-highlight { background: #dcfce7; }
+.department-highlight { border-color: #2563eb; background: #eff6ff; }
+.sibling-highlight { outline: 2px solid #f59e0b; }
+.topic { background: #475569; }
+.topic.chosen { background: #15803d; }
+#subscriptionMessage { margin-top: 15px; color: #15803d; font-weight: bold; }
+.course-list li { padding: 8px; border-bottom: 1px solid #e2e8f0; }
+.post h2 { margin-top: 0; }
+.featured { border: 2px solid #f59e0b; background: #fffbeb; }
+.tag { display: inline-block; background: #fde68a; padding: 3px 8px; border-radius: 4px; font-size: 12px; font-weight: bold; }
+.tagline { color: #64748b; font-style: italic; }
+.keyword-highlight { background: #fef3c7; border-color: #f59e0b; }
+.widget { display: inline-block; min-width: 260px; vertical-align: top; }
+.active-widget { border: 2px solid #2563eb; background: #eff6ff; }
+.modal { position: fixed; inset: 0; background: #0009; display: grid; place-items: center; padding: 20px; }
+.modal[hidden] { display: none; }
+.modal-content { background: white; padding: 24px; border-radius: 10px; max-width: 460px; }
+.error { display: block; color: #dc2626; min-height: 20px; }
+.success { color: #15803d; font-weight: bold; }
+label { display: block; margin-top: 12px; }
+label + input, form > input { display: block; width: 100%; margin: 5px 0; }
+@media (max-width: 600px) { body { padding: 10px; } .container { padding: 16px; } }

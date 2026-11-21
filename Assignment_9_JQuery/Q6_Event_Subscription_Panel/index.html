@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Subscription Panel</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  
+  <script src="script.js" defer></script>
+</head>
+<body>
+<main class="container">
+  <h1>Event Subscription Panel</h1>
+  <p>Choose topics and subscribe to event notifications.</p>
+  <section id="topics">
+    <button class="topic">Technology News</button><button class="topic">Workshops</button>
+    <button class="topic">Career Events</button><button class="topic">Webinars</button>
+    <button class="topic">Hackathons</button>
+  </section>
+  <div class="controls">
+    <button id="subscribe">Subscribe</button><button id="unsubscribe">Unsubscribe</button>
+    <input id="newTopic" placeholder="New topic name"><button id="addTopic">Add Topic</button>
+  </div>
+  <div id="subscriptionMessage" aria-live="polite"></div>
+</main>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Blog Posts</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  
+  <script src="script.js" defer></script>
+</head>
+<body>
+<main class="container">
+  <h1>Blog Post Admin</h1>
+  <div class="controls">
+    <button id="addPost">Add New Post</button><button id="prependPost">Prepend Featured Post</button>
+    <button id="removeLast">Remove Last Post</button><button id="addTag">Add Tag to First Post</button>
+    <button id="highlightKeywords">Highlight Keywords</button>
+  </div>
+  <section id="posts">
+    <article class="post"><h2>Learning JavaScript</h2><p>JavaScript makes websites interactive and dynamic.</p></article>
+    <article class="post"><h2>Getting Started with jQuery</h2><p>jQuery makes DOM manipulation easier.</p></article>
+    <article class="post"><h2>Cybersecurity Basics</h2><p>Security awareness helps protect applications and data.</p></article>
+    <article class="post"><h2>Build Better Web Projects</h2><p>Practice HTML, CSS and JavaScript with small projects.</p></article>
+    <article class="post"><h2>Tips for Developers</h2><p>Write readable code and test your work regularly.</p></article>
+  </section>
+</main>
+</body>
+</html>
