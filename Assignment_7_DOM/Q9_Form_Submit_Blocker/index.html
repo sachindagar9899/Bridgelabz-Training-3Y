@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Submit Blocker with Live Errors</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+<section class="app"><h1>Account Form</h1><form id="accountForm" novalidate><label>Name <input id="name" type="text"></label><small class="error" id="nameError"></small><label>Email <input id="email" type="text"></label><small class="error" id="emailError"></small><label>Password <input id="password" type="password"></label><small class="error" id="passwordError"></small><button type="submit">Submit</button></form><p id="successMessage" class="success" hidden>Form Submitted Successfully</p></section>
+</body>
+</html>
