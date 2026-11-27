@@ -1,0 +1,68 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Aarav"
+    },
+    {
+      "id": 2,
+      "name": "Priya"
+    },
+    {
+      "id": 3,
+      "name": "Rohan"
+    },
+    {
+      "id": 4,
+      "name": "Meera"
+    },
+    {
+      "id": 5,
+      "name": "Kabir"
+    }
+  ],
+  "orders": [
+    {
+      "id": 1,
+      "total": 120
+    },
+    {
+      "id": 2,
+      "total": 75
+    },
+    {
+      "id": 3,
+      "total": 240
+    },
+    {
+      "id": 4,
+      "total": 55
+    },
+    {
+      "id": 5,
+      "total": 99
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "Mouse"
+    },
+    {
+      "id": 2,
+      "name": "Keyboard"
+    },
+    {
+      "id": 3,
+      "name": "Monitor"
+    },
+    {
+      "id": 4,
+      "name": "Headset"
+    },
+    {
+      "id": 5,
+      "name": "Webcam"
+    }
+  ]
+}

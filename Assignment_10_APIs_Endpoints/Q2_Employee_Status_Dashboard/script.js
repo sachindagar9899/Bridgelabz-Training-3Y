@@ -1,0 +1,8 @@
+const api="http://localhost:3002/employees", list=document.getElementById("employeeList"), msg=document.getElementById("message");
+function showMsg(t,err=false){msg.textContent=t;msg.className=err?"error":"success";}
+function load(){const x=new XMLHttpRequest();x.open("GET",api);x.onload=()=>{if(x.status>=200&&x.status<300)render(JSON.parse(x.responseText));else list.textContent="Could not load employees.";};x.onerror=()=>list.textContent="Network error.";x.send();}
+function render(data){list.replaceChildren();data.forEach(e=>{const row=document.createElement("article"),name=document.createElement("strong"),status=document.createElement("span"),btn=document.createElement("button");row.className="row-card";name.textContent=e.name;status.textContent=e.status;status.className="status "+e.status;btn.textContent=e.status==="active"?"Set Inactive":"Set Active";btn.onclick=()=>toggle(e,status,btn);row.append(name,status,btn);list.append(row);});}
+function toggle(e,status,btn){const old=e.status,next=old==="active"?"inactive":"active";e.status=next;status.textContent=next;status.className="status "+next;btn.textContent=next==="active"?"Set Inactive":"Set Active";btn.disabled=true;
+const x=new XMLHttpRequest();x.open("PATCH",api+"/"+e.id);x.setRequestHeader("Content-Type","application/json");function revert(){e.status=old;status.textContent=old;status.className="status "+old;btn.textContent=old==="active"?"Set Inactive":"Set Active";btn.disabled=false;showMsg("Update failed. UI reverted.",true);}
+x.onload=()=>{btn.disabled=false;if(x.status>=200&&x.status<300)showMsg(e.name+" status updated.");else revert();};x.onerror=revert;x.send(JSON.stringify({status:next}));}
+load();

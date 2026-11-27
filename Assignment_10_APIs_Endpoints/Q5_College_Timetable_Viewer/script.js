@@ -1,0 +1,4 @@
+const api="http://localhost:3005/timetable",day=document.getElementById("day"),statusText=document.getElementById("status"),area=document.getElementById("timetable");
+async function load(){statusText.textContent="Loading...";area.replaceChildren();try{const r=await fetch(api+"?day="+encodeURIComponent(day.value));if(!r.ok)throw Error();const data=await r.json();if(!data.length){statusText.textContent="No classes today.";return;}statusText.textContent=data.length+" class(es) on "+day.value;
+data.forEach(c=>{const card=document.createElement("article"),h=document.createElement("h2"),f=document.createElement("p"),t=document.createElement("p");card.className="row-card";h.textContent=c.subject;f.textContent="Faculty: "+c.faculty;t.textContent="Time: "+c.time;card.append(h,f,t);area.append(card);});}catch(e){statusText.textContent="Unable to load timetable.";}}
+day.addEventListener("change",load);load();

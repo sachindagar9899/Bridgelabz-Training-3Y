@@ -1,0 +1,34 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "title": "Complete Java assignment",
+      "priority": "high",
+      "completed": false
+    },
+    {
+      "id": 2,
+      "title": "Read jQuery notes",
+      "priority": "medium",
+      "completed": false
+    },
+    {
+      "id": 3,
+      "title": "Organize project files",
+      "priority": "low",
+      "completed": true
+    },
+    {
+      "id": 4,
+      "title": "Practice binary trees",
+      "priority": "high",
+      "completed": true
+    },
+    {
+      "id": 5,
+      "title": "Revise API concepts",
+      "priority": "medium",
+      "completed": false
+    }
+  ]
+}

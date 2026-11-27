@@ -1,0 +1,4 @@
+$(function(){const api="http://localhost:3003/tasks";
+function load(){const f=$("#filter").val(),params={};if(f==="completed")params.completed="true";else if(f!=="all")params.priority=f;
+$("#message").text("Loading...");$.ajax({url:api,method:"GET",data:params}).done(tasks=>{const ul=$("#taskList").empty();if(!tasks.length)ul.append($("<li>").text("No tasks found."));tasks.forEach(t=>{const li=$("<li>"),check=$("<input type='checkbox'>").prop("checked",t.completed),label=$("<span>").text(t.title+" ("+t.priority+")");if(t.completed)label.addClass("done");check.on("change",function(){$.ajax({url:api+"/"+t.id,method:"PATCH",contentType:"application/json",data:JSON.stringify({completed:this.checked})}).done(load).fail(()=>{ $("#message").text("Update failed.");load();});});li.append(check,label);ul.append(li);});$("#message").text(tasks.length+" task(s) found.");}).fail(()=>$("#message").text("Could not load tasks."));}
+$("#filter").on("change",load);load();});
